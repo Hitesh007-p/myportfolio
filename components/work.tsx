@@ -1,6 +1,6 @@
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { ExternalLink } from "lucide-react"
+import { Card, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card"; // Removed CardContent
+import { Button } from "@/components/ui/button";
+import { ExternalLink } from "lucide-react";
 
 export function Work() {
   const works = [
@@ -19,7 +19,7 @@ export function Work() {
       description: "Created a secure healthcare portal with appointment scheduling system",
       link: "#",
     },
-  ]
+  ];
 
   return (
     <section id="work" className="py-20 px-4">
@@ -45,6 +45,5 @@ export function Work() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

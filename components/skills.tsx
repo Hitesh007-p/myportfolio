@@ -1,14 +1,14 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Progress } from "@/components/ui/progress"
- 
-import { Code, Smartphone, Palette, Navigation, Database, Lock, Zap, Rocket, GitBranch } from "lucide-react"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Progress } from "@/components/ui/progress";
+
+import { Code, Smartphone, Palette, Navigation, Database, Lock, Zap, Rocket, GitBranch } from "lucide-react";
 
 interface Skill {
-  name: string
-  description: string
-  icon: React.ReactNode
-  proficiency: number
-  subSkills: string[]
+  name: string;
+  description: string;
+  icon: React.ReactNode;
+  proficiency: number;
+  subSkills: string[];
 }
 
 const flutterSkills: Skill[] = [
@@ -80,7 +80,7 @@ const flutterSkills: Skill[] = [
     proficiency: 95,
     subSkills: ["Git", "GitHub", "GitLab", "Branching Strategies"],
   },
-]
+];
 
 export function Skills() {
   return (
@@ -89,38 +89,37 @@ export function Skills() {
         <h2 className="text-3xl font-bold mb-12 gradient-text text-center">Flutter Expertise</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {flutterSkills.map((skill, index) => (
-            
-              
-              <Card className="h-full bg-background/50 backdrop-blur-sm hover:bg-background/80 transition-colors">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <span className="text-blue-400">{skill.icon}</span>
-                    {skill.name}
-                  </CardTitle>
-                  <CardDescription>{skill.description}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="mb-4">
-                    <div className="flex justify-between mb-1">
-                      <span className="text-sm font-medium text-blue-400">Proficiency</span>
-                      <span className="text-sm font-medium text-blue-400">{skill.proficiency}%</span>
-                    </div>
-                    <Progress value={skill.proficiency} className="h-2" />
+            <Card
+              key={index} // Add key to the Card component
+              className="h-full bg-background/50 backdrop-blur-sm hover:bg-background/80 transition-colors"
+            >
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <span className="text-blue-400">{skill.icon}</span>
+                  {skill.name}
+                </CardTitle>
+                <CardDescription>{skill.description}</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="mb-4">
+                  <div className="flex justify-between mb-1">
+                    <span className="text-sm font-medium text-blue-400">Proficiency</span>
+                    <span className="text-sm font-medium text-blue-400">{skill.proficiency}%</span>
                   </div>
-                  <div className="flex flex-wrap gap-2">
-                    {skill.subSkills.map((subSkill, idx) => (
-                      <span key={idx} className="px-2 py-1 text-xs rounded-full bg-blue-500/10 text-blue-400">
-                        {subSkill}
-                      </span>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-             
+                  <Progress value={skill.proficiency} className="h-2" />
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {skill.subSkills.map((subSkill, idx) => (
+                    <span key={idx} className="px-2 py-1 text-xs rounded-full bg-blue-500/10 text-blue-400">
+                      {subSkill}
+                    </span>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
-

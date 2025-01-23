@@ -1,6 +1,6 @@
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Github } from "lucide-react"
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Github } from "lucide-react";
 
 export function Projects() {
   const projects = [
@@ -24,7 +24,7 @@ export function Projects() {
       description: "Real-time chat application using Socket.io and React",
       github: "#",
     },
-  ]
+  ];
 
   return (
     <section id="projects" className="py-20 px-4 bg-secondary/50">
@@ -37,6 +37,9 @@ export function Projects() {
                 <CardTitle>{project.title}</CardTitle>
                 <CardDescription>{project.description}</CardDescription>
               </CardHeader>
+              <CardContent>
+                <p className="text-sm text-foreground/70">This project is focused on delivering an exceptional user experience.</p>
+              </CardContent>
               <CardFooter>
                 <Button variant="outline" asChild>
                   <a href={project.github} className="flex items-center gap-2">
@@ -50,6 +53,5 @@ export function Projects() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
