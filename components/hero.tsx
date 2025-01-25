@@ -9,7 +9,7 @@ export function Hero() {
       {/* Profile Image */}
       <Image
         src="/me.jpg"
-        alt="Your Name"
+        alt="Hitesh Patil"
         width={150}
         height={150}
         className="rounded-full mx-auto"
@@ -32,7 +32,9 @@ export function Hero() {
           View Resume
         </Button>
         <Button size="lg" variant="outline" className="border-blue-500 hover:bg-blue-500/10">
-          Contact Me
+          <Link href="#contact">
+            Contact Me
+          </Link>
         </Button>
       </div>
 

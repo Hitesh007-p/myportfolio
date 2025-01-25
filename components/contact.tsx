@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import { Mail, Phone, Github, Twitter, Linkedin } from "lucide-react"
+import { Mail, Phone, Github, Twitter, Linkedin } from "lucide-react";
 
 interface ContactInfo {
-  icon: typeof Mail
-  text: string
-  href: string
+  icon: typeof Mail;
+  text: string;
+  href: string;
 }
 
 export function Contact() {
@@ -13,32 +13,37 @@ export function Contact() {
     {
       icon: Mail,
       text: "hiteshpatil4000@gmail.com",
-      href: "mailto:hiteshpatil4000@gmail.com"
+      href: "mailto:hiteshpatil4000@gmail.com",
     },
     {
       icon: Phone,
       text: "+91 9921134796",
-      href: "tel:+9921134796"
+      href: "tel:+9921134796",
     },
     {
       icon: Github,
       text: "github.com/Hitesh007-p",
-      href: "https://github.com/Hitesh007-p"
+      href: "https://github.com/Hitesh007-p",
     },
     {
       icon: Linkedin,
       text: "linkedin.com/in/Hitesh Patil",
-      href: "https://www.linkedin.com/in/hitesh-patil-12a272249/"
+      href: "https://www.linkedin.com/in/hitesh-patil-12a272249/",
     },
     {
       icon: Twitter,
       text: "twitter.com/Hitesh Patil",
-      href: "https://x.com/x__hitesh"
-    }
-  ]
+      href: "https://x.com/x__hitesh",
+    },
+  ];
 
   return (
-    <div className="min-h-screen bg-[#0d1117] flex items-center justify-center p-4">
+    <div className="min-h-screen bg-[#0d1117] flex flex-col items-center justify-center p-4">
+      {/* Heading */}
+      <h2 className="text-3xl font-bold mb-12 gradient-text text-center">
+        Contact Information
+      </h2>
+
       <div className="w-full max-w-2xl space-y-4">
         {contactInfo.map((info, index) => (
           <a
@@ -54,5 +59,5 @@ export function Contact() {
         ))}
       </div>
     </div>
-  )
+  );
 }
