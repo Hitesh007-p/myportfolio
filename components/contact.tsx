@@ -38,12 +38,15 @@ export function Contact() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0d1117] flex flex-col items-center justify-center p-4">
+    <div
+      id="contact" // Added the id for this section
+      className="min-h-screen bg-[#0d1117] flex flex-col items-center justify-center p-4"
+    >
       {/* Heading */}
       <h2 className="text-3xl font-bold mb-12 gradient-text text-center">
         Contact Information
       </h2>
-
+  
       <div className="w-full max-w-2xl space-y-4">
         {contactInfo.map((info, index) => (
           <a
@@ -60,4 +63,4 @@ export function Contact() {
       </div>
     </div>
   );
-}
+}  
