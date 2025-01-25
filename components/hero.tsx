@@ -38,10 +38,10 @@ export function Hero() {
 
       {/* Social Links */}
       <div className="flex gap-6 mt-8 mb-24">
-        <SocialLink href="https://github.com" icon={<Github />} label="GitHub" />
-        <SocialLink href="https://twitter.com" icon={<Twitter />} label="Twitter" />
-        <SocialLink href="https://linkedin.com" icon={<Linkedin />} label="LinkedIn" />
-        <SocialLink href="https://gitlab.com" icon={<GitlabLogo />} label="GitLab" />
+        <SocialLink href="https://github.com/Hitesh007-p" icon={<Github />} label="GitHub" />
+        <SocialLink href="https://x.com/x__hitesh" icon={<Twitter />} label="Twitter" />
+        <SocialLink href="https://www.linkedin.com/in/hitesh-patil-12a272249/" icon={<Linkedin />} label="LinkedIn" />
+        <SocialLink href="https://gitlab.com/hiteshpatil4000" icon={<GitlabLogo />} label="GitLab" />
       </div>
 
       {/* Explore Work Link */}
