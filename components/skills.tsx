@@ -121,4 +121,4 @@ export function Skills() {
       </div>
     </section>
   );
-}
+} 
