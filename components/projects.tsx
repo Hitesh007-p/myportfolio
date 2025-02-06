@@ -16,7 +16,7 @@ export function Projects() {
       title: "E-Commerce App",
       description: "This Flutter-based e-commerce app provides a seamless shopping experience for users, featuring a user-friendly interface, easy product navigation, and a secure checkout system. It supports a variety of products, customizable options, and integrates with payment gateways for a smooth transaction process.",
       details: "Displays weather forecasts for multiple locations with a dynamic and responsive design.",
-      screenshot: "/screenshots/weather-app.png",
+      screenshot: "/download.jpg",
       github: "https://github.com/example/weather-app",
     },
     {
