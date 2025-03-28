@@ -3,10 +3,10 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/com
 
 export function Experience() {
   return (
-    <section id="experience" className="py-20 px-4 bg-gradient-to-b from-secondary/20 to-background">
+    <section id=" " className="py-20 px-4 bg-gradient-to-b from-secondary/20 to-background">
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-4xl font-bold mb-16 gradient-text text-center hover:scale-105 transition-transform">
-          🚀 Journey as Intern
+          🚀 Experience as Intern
         </h2>
 
         <div className="group/card relative">

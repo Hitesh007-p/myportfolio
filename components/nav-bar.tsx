@@ -12,8 +12,8 @@ export function NavBar() {
             <Link href="#skills" className="text-foreground/80 hover:text-foreground transition-colors">
               Skill
             </Link>
-            <Link href="#work" className="text-foreground/80 hover:text-foreground transition-colors">
-              Work
+            <Link href="#experience" className="text-foreground/80 hover:text-foreground transition-colors">
+              Experience
             </Link>
             <Link href="#projects" className="text-foreground/80 hover:text-foreground transition-colors">
               Projects
