@@ -1,5 +1,3 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
 import { Code, Smartphone, Palette, Navigation, Database, Lock, Zap, Rocket, GitBranch } from "lucide-react";
 
 interface Skill {
