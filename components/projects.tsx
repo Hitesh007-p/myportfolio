@@ -30,7 +30,8 @@ export function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-16 px-4 bg-background">
+    <section id="projects" className="py-20 px-4 hover:bg-gradient-to-t hover:from-secondary/10 hover:to-transparent transition-all duration-300 group"
+    >
       <div className="container mx-auto max-w-3xl">
       <h2 className="text-3xl font-bold mb-12 gradient-text text-center">Projects</h2>
         <div className="space-y-8">
