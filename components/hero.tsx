@@ -20,7 +20,7 @@ export function Hero() {
         <span className="gradient-text">Hitesh Patil</span>
       </h1>
       <h2 className="text-2xl md:text-3xl text-blue-400 mb-6">
-        Flutter & Dart Developer | App Enthusiast
+        Flutter & Dart Developer
       </h2>
       <p className="max-w-2xl text-lg text-foreground/80 mb-8 mx-auto">
         Crafting seamless cross-platform mobile experiences with Flutter.

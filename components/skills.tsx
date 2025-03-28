@@ -78,44 +78,41 @@ const flutterSkills: Skill[] = [
 
 export function Skills() {
   return (
-    <section id="skills" className="py-20 px-4 bg-secondary/30">
-      <div className="container mx-auto">
-        <h2 className="text-4xl font-extrabold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-400">
-          Flutter Expertise
+    <section id="skills" className="py-16 px-4 bg-background">
+      <div className="container mx-auto max-w-6xl">
+        <h2 className="text-3xl font-medium mb-16 text-center text-foreground">
+          Flutter Development Expertise
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {flutterSkills.map((skill, index) => (
-            <Card
-              key={index}
-              className="h-full bg-background/50 backdrop-blur-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+            <div 
+              key={index} 
+              className="p-6 rounded-xl hover:bg-muted/20 transition-colors group"
             >
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-xl font-semibold">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="text-muted-foreground/80 group-hover:text-blue-500 transition-colors">
                   {skill.icon}
-                  <span>{skill.name}</span>
-                </CardTitle>
-                <CardDescription>{skill.description}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="mb-4">
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="text-sm font-medium text-blue-400">Proficiency</span>
-                    <span className="text-sm font-semibold text-blue-400">{skill.proficiency}%</span>
-                  </div>
-                  <Progress value={skill.proficiency} className="h-2 bg-gray-700 rounded-full" />
                 </div>
-                <div className="flex flex-wrap gap-2">
-                  {skill.subSkills.map((subSkill, idx) => (
-                    <span
-                      key={idx}
-                      className="px-3 py-1 text-xs font-medium rounded-full bg-blue-500/10 text-blue-400 hover:bg-blue-500/20 transition"
-                    >
-                      {subSkill}
-                    </span>
-                  ))}
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold text-foreground mb-2">
+                    {skill.name}
+                  </h3>
+                  <p className="text-sm text-muted-foreground/90 leading-relaxed">
+                    {skill.description}
+                  </p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+              <div className="flex flex-wrap gap-2 mt-4">
+                {skill.subSkills.map((subSkill, idx) => (
+                  <span
+                    key={idx}
+                    className="px-3 py-1 text-xs font-medium rounded-full bg-muted/40 text-foreground/80"
+                  >
+                    {subSkill}
+                  </span>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>
