@@ -14,7 +14,7 @@ export function Hero() {
         height={150}
         className="rounded-full mx-auto"
       />
-      
+
       {/* Title and Description */}
       <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
         <span className="gradient-text">Hitesh Patil</span>
@@ -28,11 +28,11 @@ export function Hero() {
 
       {/* Buttons */}
       <div className="flex flex-wrap gap-4 justify-center">
-      <a href="/hitesh.pdf" target="_blank" rel="noopener noreferrer" download>
-        <Button size="lg" className="bg-gradient-to-r from-pink-500 to-purple-500 hover:opacity-90">
-        View Resume
-       </Button>
-       </a>
+        <a href="/hitesh.pdf" target="_blank" rel="noopener noreferrer" download>
+          <Button size="lg" className="bg-gradient-to-r from-pink-500 to-purple-500 hover:opacity-90">
+            View Resume
+          </Button>
+        </a>
         <Button size="lg" variant="outline" className="border-blue-500 hover:bg-blue-500/10">
           <Link href="#contact">
             Contact Me
