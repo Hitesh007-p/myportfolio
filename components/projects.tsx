@@ -1,70 +1,76 @@
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github } from "lucide-react";
-import Image from "next/image";
 
 export function Projects() {
   const projects = [
     {
       title: "ShetiMitra",
-      description: "Shetimitra is a comprehensive platform designed for farmers, providing resources, tools, and support to help them optimize agricultural practices. It focuses on delivering user-friendly features tailored to the farming community.",
-      details: "Built with Flutter & Dart for cross-platform mobile application development. This app helps users organize tasks with an intuitive interface.Displays weather forecasts for multiple locations with a dynamic and responsive design.",
-      screenshot: "/home.png",
+      description: "Farmer resource platform with weather integration",
+      tech: "Flutter • Firebase • REST API",
       github: "https://github.com/Hitesh007-p/shetimitra",
     },
     {
       title: "E-Commerce App",
-      description: "This Flutter-based e-commerce app provides a seamless shopping experience for users, featuring a user-friendly interface, easy product navigation, and a secure checkout system. It supports a variety of products, customizable options, and integrates with payment gateways for a smooth transaction process.",
-      details: "Displays weather forecasts for multiple locations with a dynamic and responsive design.",
-      screenshot: "/download.jpg",
+      description: "Mobile shopping experience with secure payments",
+      tech: "Flutter • Stripe • State Management",
       github: "https://github.com/example/weather-app",
     },
     {
-      title: "KML Real-Time Tracking App",
-      description: "A mobile application built with Flutter, designed to provide real-time tracking of locations and generate KML (Keyhole Markup Language) files for geographic data visualization. The app allows users to track and visualize locations on a map in real-time, offering a seamless experience for monitoring movement.",
-      details: "This app is ideal for use in logistics, delivery services, and personal tracking, providing real-time visibility of assets or people while allowing data to be easily shared and analyzed.",
-      screenshot: "/travel.jpg",
+      title: "KML Tracking",
+      description: "Real-time geographic data visualization",
+      tech: "Flutter • Maps SDK • Location Services",
       github: "https://github.com/Hitesh007-p/travel_tracker",
     },
     {
-      title: "Login Pages",
-      description: "The login page provides users with a simple, secure, and efficient way to access their accounts. Built using Flutter and Firebase Authentication, this page ensures a smooth user experience and high security.",
-      details: "Flutter, Firebase Authentication, Dart",
-      screenshot: "/login.jpg",
+      title: "Auth System",
+      description: "Secure authentication flows",
+      tech: "Firebase Auth • OAuth • Bloc Pattern",
       github: "https://github.com/example/chat-application",
     },
   ];
 
   return (
-    <section id="projects" className="py-20 px-4 bg-secondary/50">
-      <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-12 gradient-text text-center">Projects</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+    <section id="projects" className="py-16 px-4 bg-background">
+      <div className="container mx-auto max-w-3xl">
+      <h2 className="text-3xl font-bold mb-12 gradient-text text-center">Projects</h2>
+        <div className="space-y-8">
           {projects.map((project, index) => (
-            <Card key={index} className="bg-background">
-              <CardHeader>
-                <CardTitle>{project.title}</CardTitle>
-                <CardDescription>{project.description}</CardDescription>
-              </CardHeader>
-              <Image
-                src={project.screenshot}
-                alt={`${project.title} screenshot`}
-                width={200}
-                height={200}
-                className="rounded-md mx-auto"
-              />
-              <CardContent>
-                <p className="text-sm text-foreground/70">{project.details}</p>
-              </CardContent>
-              <CardFooter>
-                <Button variant="outline" asChild>
-                  <a href={project.github} className="flex items-center gap-2">
+            <div 
+              key={index}
+              className="group p-6 rounded-lg hover:bg-muted/5 transition-all duration-300"
+            >
+              <div className="flex items-start justify-between">
+                <div>
+                  <h3 className="text-lg font-semibold mb-2 group-hover:text-blue-500 transition-colors">
+                    {project.title}
+                  </h3>
+                  <p className="text-muted-foreground mb-3 group-hover:text-foreground/90 transition-colors">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2 text-sm text-muted-foreground/80">
+                    {project.tech.split(" • ").map((item, idx) => (
+                      <span 
+                        key={idx} 
+                        className="px-2 py-1 rounded-md bg-muted/30 group-hover:bg-muted/50 transition-colors"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                <Button variant="ghost" size="sm" asChild>
+                  <a 
+                    href={project.github} 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
+                  >
                     <Github className="h-4 w-4" />
-                    View on GitHub
+                    <span className="text-sm">GitHub</span>
                   </a>
                 </Button>
-              </CardFooter>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
       </div>
