@@ -5,26 +5,26 @@ export function Projects() {
   const projects = [
     {
       title: "ShetiMitra",
-      description: "Farmer resource platform with weather integration",
-      tech: "Flutter • Firebase • REST API",
+      description: "ShetiMitra is a smart agriculture mobile application designed to empower farmers with real-time insights, essential tools, and digital services to enhance productivity. The app provides weather updates, market prices, AI-powered plant disease detection, equipment rentals, and access to government schemes.",
+      tech: "Flutter • Firebase • REST API • AI/ML • Google Maps API.",
       github: "https://github.com/Hitesh007-p/shetimitra",
     },
     {
       title: "E-Commerce App",
-      description: "Mobile shopping experience with secure payments",
-      tech: "Flutter • Stripe • State Management",
-      github: "https://github.com/example/weather-app",
+      description: "A Flutter-based e-commerce app offering a seamless shopping experience with user-friendly navigation, product browsing, cart management, and secure checkout.",
+      tech: "Flutter • Dart • Firebase • REST API",
+      github: "https://github.com/Hitesh007-p/vegitable_delivery_apk",
     },
     {
       title: "KML Tracking",
-      description: "Real-time geographic data visualization",
-      tech: "Flutter • Maps SDK • Location Services",
+      description: "A mobile application for real-time location tracking that generates KML files for geographic data visualization and mapping.",
+      tech: "Flutter • Dart • Location Service • Google Maps API • GPS Tracking ",
       github: "https://github.com/Hitesh007-p/travel_tracker",
     },
     {
-      title: "Auth System",
-      description: "Secure authentication flows",
-      tech: "Firebase Auth • OAuth • Bloc Pattern",
+      title: "Land Measurement App",
+      description: "A mobile application designed to help farmers accurately measure their land using GPS technology. The app allows users to mark boundary points, calculate total land area, and save measurements for future reference. It provides an easy-to-use interface tailored for agricultural needs.",
+      tech: "Flutter • Dart • Google Maps API • GPS Tracking ",
       github: "https://github.com/example/chat-application",
     },
   ];
