@@ -1,5 +1,5 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
- 
+
 
 export function Experience() {
   return (
@@ -12,7 +12,7 @@ export function Experience() {
         <div className="group/card relative">
           <Card className="relative overflow-hidden hover:shadow-xl transition-shadow duration-300 border-2 border-primary/20 hover:border-primary/30">
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/5 to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity" />
-            
+
             <CardHeader className="pb-3">
               <CardTitle className="text-2xl font-extrabold flex items-center gap-2">
                 <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
@@ -34,7 +34,7 @@ export function Experience() {
                   "Collaborated with the development team to optimize app performance",
                   "Debugged and tested functionalities for a seamless user experience"
                 ].map((item, index) => (
-                  <li 
+                  <li
                     key={index}
                     className="flex items-start gap-3 text-muted-foreground hover:text-foreground transition-colors"
                   >
@@ -50,7 +50,7 @@ export function Experience() {
 
               <div className="mt-8 flex justify-end">
                 <a
-                  href="/hiteshp.pdf"
+                  href="Internship Certificate.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group/button inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-primary to-blue-600 text-white rounded-xl hover:rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 hover:scale-105 transform-gpu origin-center"

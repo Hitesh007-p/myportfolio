@@ -28,7 +28,7 @@ export function Hero() {
 
       {/* Buttons */}
       <div className="flex flex-wrap gap-4 justify-center">
-        <a href="/hitesh.pdf" target="_blank" rel="noopener noreferrer" download>
+        <a href="/hitesh resume.pdf" target="_blank" rel="noopener noreferrer" download>
           <Button size="lg" className="bg-gradient-to-r from-pink-500 to-purple-500 hover:opacity-90 hover:scale-105 transition-transform duration-300">
             View Resume
           </Button>

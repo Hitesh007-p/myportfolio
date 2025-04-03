@@ -1,4 +1,4 @@
-import { Code, Smartphone, Palette, Navigation, Database, Lock, Zap, Rocket, GitBranch } from "lucide-react";
+import { Code, Smartphone, Palette, Navigation, Database, Lock, Zap, Rocket, GitBranch, Terminal } from "lucide-react";
 
 interface Skill {
   name: string;
@@ -10,11 +10,18 @@ interface Skill {
 
 const flutterSkills: Skill[] = [
   {
+    name: "Python Development",
+    description: "Developing AI-driven and automation solutions",
+    icon: <Terminal className="w-6 h-6 text-blue-400" />,
+    proficiency: 75,
+    subSkills: ["AI & Automation", "Speech Recognition", "Data Processing", "Basic Web Development", "API Development"],
+  },
+  {
     name: "Core Flutter",
     description: "Fundamental Flutter development skills",
     icon: <Smartphone className="w-6 h-6 text-blue-400" />,
     proficiency: 80,
-    subSkills: ["Dart Programming", "State Management", "API Integration","Responsive Layouts", "Custom Widgets"],
+    subSkills: ["Dart Programming", "State Management", "API Integration", "Responsive Layouts", "Custom Widgets"],
   },
   {
     name: "UI/UX Design",
@@ -28,7 +35,7 @@ const flutterSkills: Skill[] = [
     description: "Implementing complex navigation patterns",
     icon: <Navigation className="w-6 h-6 text-blue-400" />,
     proficiency: 80,
-    subSkills: [ "Nested Routing", "Dynamic Routing"],
+    subSkills: ["Nested Routing", "Dynamic Routing"],
   },
   {
     name: "Advanced Concepts",
@@ -78,13 +85,13 @@ export function Skills() {
   return (
     <section id="skills" className="py-16 px-4 bg-background">
       <div className="container mx-auto max-w-6xl">
-      <h2 className="text-3xl font-bold mb-12 gradient-text text-center">
+        <h2 className="text-3xl font-bold mb-12 gradient-text text-center">
           Flutter Development Expertise
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {flutterSkills.map((skill, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="p-6 rounded-xl hover:bg-muted/20 transition-colors group"
             >
               <div className="flex items-start gap-4 mb-4">

@@ -4,6 +4,12 @@ import { Github } from "lucide-react";
 export function Projects() {
   const projects = [
     {
+      title: "Elina – Personal AI Assistant",
+      description: "An AI-powered personal assistant with voice recognition, speech synthesis, and automation features. It interacts with users in real-time, detects emotions, and provides intelligent responses.",
+      tech: "Python • Speech Recognition • TTS • Gemini API • PyAutoGUI",
+      github: "https://github.com/Hitesh007-p/elina",
+    },
+    {
       title: "ShetiMitra",
       description: "ShetiMitra is a smart agriculture mobile application designed to empower farmers with real-time insights, essential tools, and digital services to enhance productivity. The app provides weather updates, market prices, AI-powered plant disease detection, equipment rentals, and access to government schemes.",
       tech: "Flutter • Firebase • REST API • AI/ML • Google Maps API.",
@@ -33,10 +39,10 @@ export function Projects() {
     <section id="projects" className="py-20 px-4 hover:bg-gradient-to-t hover:from-secondary/10 hover:to-transparent transition-all duration-300 group"
     >
       <div className="container mx-auto max-w-3xl">
-      <h2 className="text-3xl font-bold mb-12 gradient-text text-center">Projects</h2>
+        <h2 className="text-3xl font-bold mb-12 gradient-text text-center">Projects</h2>
         <div className="space-y-8">
           {projects.map((project, index) => (
-            <div 
+            <div
               key={index}
               className="group p-6 rounded-lg hover:bg-muted/5 transition-all duration-300"
             >
@@ -50,8 +56,8 @@ export function Projects() {
                   </p>
                   <div className="flex flex-wrap gap-2 text-sm text-muted-foreground/80">
                     {project.tech.split(" • ").map((item, idx) => (
-                      <span 
-                        key={idx} 
+                      <span
+                        key={idx}
                         className="px-2 py-1 rounded-md bg-muted/30 group-hover:bg-muted/50 transition-colors"
                       >
                         {item}
@@ -60,8 +66,8 @@ export function Projects() {
                   </div>
                 </div>
                 <Button variant="ghost" size="sm" asChild>
-                  <a 
-                    href={project.github} 
+                  <a
+                    href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
